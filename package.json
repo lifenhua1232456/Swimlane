@@ -1,0 +1,69 @@
+{
+  "author": "Muhammad Ubaid Raza mubaidr@gmail.com",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "bugs": {
+    "url": "https://github.com/mubaidr/vue-swimlane/issues"
+  },
+  "dependencies": {},
+  "description": "A simple vuejs 2.0+ text swimlane plugin.",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "7.4.5",
+    "eslint": "^6.0.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^5.0.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-plugin-html": "^5.0.5",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "rollup": "^1.16.2",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-node-resolve": "^5.0.4",
+    "rollup-plugin-terser": "^5.0.0",
+    "rollup-plugin-vue": "^5.0.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "package.json",
+    "src/component",
+    "dist/",
+    "vetur/"
+  ],
+  "homepage": "https://github.com/mubaidr/vue-swimlane#readme",
+  "keywords": [
+    "vue",
+    "vuejs",
+    "swimlane",
+    "slider"
+  ],
+  "license": "MIT",
+  "main": "src/component/index.js",
+  "name": "vue-swimlane",
+  "peerDependencies": {
+    "vue": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mubaidr/vue-swimlane.git"
+  },
+  "scripts": {
+    "build": "rollup --config rollup.config.js",
+    "build-docs": "cd src/docs && npm run build && cd ../..",
+    "dev": "cd src/docs && npm run dev && cd ../..",
+    "lint": "eslint --ext .js,.vue --fix ./src/component"
+  },
+  "version": "0.4.3",
+  "vetur": {
+    "tags": "vetur/tags.json",
+    "attributes": "vetur/attributes.json"
+  }
+}
